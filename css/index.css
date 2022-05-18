@@ -1,0 +1,118 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycyan: hsl(185, 75%, 39%);
+    --primarydesatblue: hsl(229, 23%, 23%);
+    --primarygrayishblue: hsl(227, 10%, 46%);
+    --neutralgray: hsl(0, 0%, 59%);
+    --fontsize: 18px;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main {
+    background-color: var(--primarycyan);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.box {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profilephoto {
+    position: relative;
+}
+
+.profilephoto img {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid white;
+}
+
+h1 {
+    color: var(--primarydesatblue);
+    font-size: var(--fontsize);
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+
+h1>span {
+    color: var(--neutralgray);
+    font-weight: 400;
+}
+
+.info>span {
+    color: var(--neutralgray);
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.info_stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-top: 1px solid hsl(0deg 0% 59% / 50%);
+}
+
+.stats>span {
+    display: block;
+    margin-top: 6px;
+}
+
+
+.stats>span:first-child {
+    font-weight: 700;
+    font-size: var(--fontsize);
+}
+
+.stats>span:last-child {
+    color: var(--neutralgray);
+    font-weight: 400;
+}
+
+.pattern_1 {
+    position: absolute;
+    background-image: url(../photos/bg-pattern-top.svg);
+    background-size: cover;
+    width: 800px;
+    height: 800px;
+    max-width: 100%;
+    bottom: -60%;
+    right: -10%;
+}
+
+.pattern_2 {
+    position: absolute;
+    background-image: url(../photos/bg-pattern-top.svg);
+    background-size: cover;
+    width: 800px;
+    height: 800px;
+    max-width: 100%;
+    top: -60%;
+    left: -10%;
+}
